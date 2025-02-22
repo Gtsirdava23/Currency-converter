@@ -1,0 +1,60 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Currency Converter</title>
+    <link rel="stylesheet" href="styles.css">
+    <script src="script.js" defer></script>
+</head>
+<body>
+    <div class="container">
+        <div class="language-section">
+            <label for="languageSelect">🌍 Language:</label>
+            <select id="languageSelect">
+                <option value="en">English</option>
+                <option value="de">Deutsch</option>
+                <option value="uk">Українська</option>
+                <option value="es">Español</option>
+                <option value="ja">日本語</option>
+                <option value="zh">中文</option>
+            </select>
+        </div>
+
+        <h1 id="title">Currency Converter 💶💲</h1>
+
+        <div class="converter-section">
+            <input type="number" id="amount" placeholder="Enter amount" min="0">
+
+            <label for="fromCurrency">From:</label>
+            <input type="text" id="fromCurrency" placeholder="Enter currency code (e.g., USD)" list="currencyList">
+
+            <label for="toCurrency">To:</label>
+            <input type="text" id="toCurrency" placeholder="Enter currency code (e.g., EUR)" list="currencyList">
+
+            <datalist id="currencyList">
+                <option value="USD">
+                <option value="EUR">
+                <option value="JPY">
+                <option value="GBP">
+                <option value="AUD">
+                <option value="CAD">
+                <option value="CHF">
+                <option value="CNY">
+                <option value="HKD">
+                <option value="NZD">
+                <option value="SEK">
+                <option value="KRW">
+                <option value="SGD">
+                <option value="NOK">
+                <option value="UAH">
+            </datalist>
+
+            <button id="convertBtn">Convert</button>
+        </div>
+
+        <h3 id="resultLabel">Result:</h3>
+        <p id="result"></p>
+    </div>
+</body>
+</html>
